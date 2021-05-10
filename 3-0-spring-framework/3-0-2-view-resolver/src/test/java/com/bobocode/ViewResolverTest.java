@@ -1,4 +1,4 @@
-package com.bobocode.viewresolver;
+package com.bobocode;
 
 import com.bobocode.config.ResolverConfig;
 import lombok.SneakyThrows;
