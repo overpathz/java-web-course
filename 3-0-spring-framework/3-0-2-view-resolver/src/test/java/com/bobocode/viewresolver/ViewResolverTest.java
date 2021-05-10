@@ -1,6 +1,6 @@
 package com.bobocode.viewresolver;
 
-import com.bobocode.viewresolver.config.ResolverConfig;
+import com.bobocode.config.ResolverConfig;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,7 +58,7 @@ public class ViewResolverTest {
     @DisplayName("ComponentScan packages are indicated")
     void ComponentScanHasIndicatedPackages() {
         ComponentScan componentScan = ResolverConfig.class.getAnnotation(ComponentScan.class);
-        assertEquals("com.bobocode.resolver", componentScan.basePackages()[0]);
+        assertEquals("com.bobocode", componentScan.basePackages()[0]);
     }
 
     @Test
